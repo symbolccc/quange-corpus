@@ -3,7 +3,8 @@
 > 把全网公开内容炼成**逐条带出处、可复核**的人物判据体系。公开的是**索引、判据、方法与统计**；第三方原文只保存在本地。
 > 状态：采集层完成、判据 v1（10 条）、言行回测未开始。更新：2026-11-09。
 
-**在线浏览**：本仓库 `docs/index.html`（开启 GitHub Pages 后可见，也可直接下载双击打开，零依赖、离线可用）。
+**在线浏览**：https://symbolccc.github.io/quange-corpus/ （GitHub Pages，`main /docs`）；也可直接打开本仓库 `docs/index.html`，零依赖、离线可用。
+**仓库**：https://github.com/symbolccc/quange-corpus
 
 ## 这个项目解决什么
 
