@@ -6,6 +6,23 @@
 **在线浏览**：https://symbolccc.github.io/quange-corpus/ （GitHub Pages，`main /docs`）；也可直接打开本仓库 `docs/index.html`，零依赖、离线可用。
 **仓库**：https://github.com/symbolccc/quange-corpus
 
+## ⭐ 作为 Skill 直接调用
+
+本仓库本身就是一个标准 Skill 包，入口是根目录 `SKILL.md`。**把这个链接发给 WorkBuddy / 任意 AI 就能调用**：
+
+- 仓库链接：https://github.com/symbolccc/quange-corpus
+- Skill 原文：https://raw.githubusercontent.com/symbolccc/quange-corpus/main/SKILL.md
+- 一句话指令：`加载 https://raw.githubusercontent.com/symbolccc/quange-corpus/main/SKILL.md ，按其标准工作流与固定输出结构回答：<你的问题>`
+
+本地也能零依赖直接跑：
+
+```bash
+python scripts/quange_answer.py "现金流为负的公司能看吗"
+python scripts/quange_answer.py "…" --json
+```
+
+Skill 依据 `docs/criteria.json`（10 条冻结判据）输出固定五段：结论 / 依据 / 出处 / 证据等级 / 待补充；未接本地语料时一律标「判据推演，非本人观点」，绝不冒充本人原话。
+
 ## 这个项目解决什么
 
 不是给「全哥」做估值，而是把他在雪球、抖音、快手、YouTube 的公开表述，拆成可以回答「他会怎么判断」的判据：每条判据都有原话、出处、证据等级与衡量方式，避免把二手转述、家属/切片号内容、ASR 误识别当成他本人的观点。
