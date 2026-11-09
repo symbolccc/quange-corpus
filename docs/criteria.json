@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-10-19",
+  "subject": "全哥（北方的wolf1985）",
+  "method": "从 judgment-candidates.json（552 条候选）+ 高赞文章精读提炼；每条附原文出处；转写语料完成后继续扩充与修正",
+  "provenance_enum": [
+    "person_verbatim",
+    "person_implied",
+    "editor_analyst",
+    "practice_derived"
+  ],
+  "note": "decision_weight 表示该判据在其决策中的地位（editor_analyst 标注）；本文件是'他的判据'的重建，不是投资建议",
+  "criteria": [
+    {
+      "id": "Q-cashflow-filter",
+      "question": "这家公司现金流好不好？",
+      "provenance": "person_verbatim",
+      "evidence_quote": [
+        "现金流不好的公司看都不要看了，品牌弱没有核心技术的企业，基本不可能赚到钱了"
+      ],
+      "source_refs": [
+        "xueqiu:7153156603/4684370358 《价值观的价值》2021-11-20"
+      ],
+      "decision_weight": "core",
+      "how_to_measure": "经营现金流连续为负或远低于净利润 => 直接出局，不做进一步分析"
+    },
+    {
+      "id": "Q-cognition-circle",
+      "question": "这在不在我的认知范围内？",
+      "provenance": "person_verbatim",
+      "evidence_quote": [
+        "我们永远赚不到认知之外的钱",
+        "一定用闲钱炒股，做好仓位管理是心平气和的关键，买入躺着赚钱的公司，我们能睡得着觉"
+      ],
+      "source_refs": [
+        "douyin:aweme 7129033944027951909 2022-08-08（赞1760）"
+      ],
+      "decision_weight": "gate",
+      "how_to_measure": "无法用一段话讲清生意如何赚钱 => 不投；本判据为门槛，不通过即停"
+    },
+    {
+      "id": "Q-cash-over-profit",
+      "question": "账面利润是否变成了真金白银？",
+      "provenance": "person_verbatim",
+      "evidence_quote": [
+        "2015年前做代理品牌，每年轻松做大几亿的规模，看起来很赚钱但是总见不到钱，资金都压库存和在途了，一个双十一就要压5000万库存"
+      ],
+      "source_refs": [
+        "xueqiu:7153156603/408257660 《努力不重要》2026-09-07"
+      ],
+      "decision_weight": "core",
+      "how_to_measure": "利润高但应收/库存增速远超收入增速 => 视为劣质增长"
+    },
+    {
+      "id": "Q-dcf-mindset",
+      "question": "未来现金流折现怎么算？",
+      "provenance": "person_verbatim",
+      "evidence_quote": [
+        "未来现金流的折现不是算法，是思维方式，不要企图拿计算器去算出来"
+      ],
+      "source_refs": [
+        "xueqiu:7153156603/258503837 拼多多大涨后 2019-10-25"
+      ],
+      "decision_weight": "signal_only",
+      "known_conflict": "与巴菲特/段永平表述同源，属转述；用于理解其估值观，不构成可执行公式"
+    },
+    {
+      "id": "Q-trend-shift",
+      "question": "行业红利是否已经消失？",
+      "provenance": "person_verbatim",
+      "evidence_quote": [
+        "2018年5月开始，我们就感觉到流量突破消失了，就开始谨慎保守"
+      ],
+      "source_refs": [
+        "xueqiu:7153156603/281648086 《最难的一年》2024-03-12"
+      ],
+      "decision_weight": "core",
+      "how_to_measure": "获客成本拐点/流量增速失速 => 提前收缩，不等下滑确认（其 2018 实战案例）"
+    },
+    {
+      "id": "Q-consumer-mind",
+      "question": "消费者心智是否正在被改写？",
+      "provenance": "person_verbatim",
+      "evidence_quote": [
+        "消费者观点的改变大都因为短视频的宣传",
+        "营销就是把产品卖给想用的人…最重要的事情有三件：发现想用你产品的人在哪里，让想用的人知道你的产品"
+      ],
+      "source_refs": [
+        "xueqiu:7153156603/343025625 《昨日的世界》2025-07-18（赞969）",
+        "douyin:aweme 7126844486977462555 2022-10-06"
+      ],
+      "decision_weight": "core",
+      "how_to_measure": "渠道/内容形态迁移（货架→内容→AI）=> 重估品牌与渠道护城河"
+    },
+    {
+      "id": "Q-do-right-things",
+      "question": "这是'对的事'还是只是'把事做对'？",
+      "provenance": "person_implied",
+      "evidence_quote": [
+        "建立对事物本质和行为原则的底层认知框架，并用原则指导行为就是做对的事"
+      ],
+      "source_refs": [
+        "douyin:aweme 7127967134949935900 2022-09-23（赞985）"
+      ],
+      "decision_weight": "core",
+      "known_conflict": "段永平'做对的事，把事做对'框架的转述与个人应用；方向优先于效率"
+    },
+    {
+      "id": "Q-right-people",
+      "question": "在对的人身上花时间了吗？",
+      "provenance": "person_verbatim",
+      "evidence_quote": [
+        "我们千万不要在不合适的人身上浪费时间精力，而应该去到茫茫人海中，找到那些本来就志同道合的朋友"
+      ],
+      "source_refs": [
+        "douyin:aweme 2022-08-14（赞6911，全网最高赞之一）"
+      ],
+      "decision_weight": "signal_only",
+      "scope": "用人/合作/社交判据，非投资判据"
+    },
+    {
+      "id": "Q-mindset-poverty",
+      "question": "这是能力问题还是思维方式问题？",
+      "provenance": "person_verbatim",
+      "evidence_quote": [
+        "贫穷是可以传承的，贫穷和能力无关和思维方式关系巨大"
+      ],
+      "source_refs": [
+        "xueqiu:7153156603/262390409 《贫穷的本质》2023-10-02（赞717）"
+      ],
+      "decision_weight": "context",
+      "scope": "人生哲学底层；影响其对'努力/选择/环境'的权重排序（方向>努力）"
+    },
+    {
+      "id": "Q-lying-flat-invest",
+      "question": "这笔折腾的收益能否超过躺平投资？",
+      "provenance": "person_verbatim",
+      "evidence_quote": [
+        "我之前建议他拿出一部分资金躺平做投资，比折腾不赚钱的生意强多了",
+        "我从22年躺平以后，现金流变得越来越好了"
+      ],
+      "source_refs": [
+        "xueqiu:7153156603/408257660 《努力不重要》2026-09-07"
+      ],
+      "decision_weight": "core",
+      "how_to_measure": "实业主业 ROI 若低于其美股组合预期回报+创业风险溢价 => 收缩业务做投资"
+    }
+  ],
+  "next_steps": [
+    "直播转写完成后从口播中补判据（预计口播里投资判断更直接）",
+    "judgment-candidates.json 剩余 500+ 条待继续提炼 v2",
+    "言行对照：用 criteria 回测其历史判断（雪球帖子带时间戳，可对市场走势）"
+  ]
+}

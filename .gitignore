@@ -1,0 +1,10 @@
+# 安全护栏：本仓库只放白名单内容，禁止提交任何原始语料 / 凭据
+corpus/
+*_cookies.txt
+ks_*
+*.env
+*.key
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini

@@ -1,0 +1,61 @@
+{
+  "generated": "2026-11-09",
+  "source_group": "A 本机实测",
+  "measurements": {
+    "雪球原创正文": 1228,
+    "雪球纯文本": 1228,
+    "其中 <200 字节": 40,
+    "其中 ≥200 字节": 1188,
+    "雪球 timeline 列表页": 110,
+    "直播转写文件": 101,
+    "直播转写字节": 11287582,
+    "指纹总行数": 8176,
+    "唯一内容簇": 7659,
+    "同平台重复簇": 507,
+    "跨平台重复簇": 10,
+    "判据条数": 10,
+    "带 source_refs": 10,
+    "person_verbatim": 9,
+    "person_implied": 1,
+    "期数总表行数": 6811
+  },
+  "project_claimed": [
+    {
+      "item": "平台条目总数",
+      "value": "8872 条",
+      "source": "corpus-index/dedup-report.md"
+    },
+    {
+      "item": "抖音主号 / 小号",
+      "value": "2630 / 1021 条",
+      "source": "corpus-index/dedup-report.md"
+    },
+    {
+      "item": "快手自营号独有",
+      "value": "3338 条",
+      "source": "corpus-index/dedup-report.md"
+    },
+    {
+      "item": "YouTube 视频 / 直播",
+      "value": "1782 / 101 条",
+      "source": "corpus-index/dedup-report.md"
+    },
+    {
+      "item": "判断句候选池",
+      "value": "552 条（雪球 254 + 抖音 298）",
+      "source": "PROGRESS.md"
+    },
+    {
+      "item": "账号矩阵",
+      "value": "19 个账号",
+      "source": "PROGRESS.md / person-forge preset"
+    }
+  ],
+  "pending": [
+    "旧文档称雪球「1114 篇实质内容」，磁盘 ≥200 字节为 1188 篇，差 74 篇 —— 清洗口径需补充",
+    "旧文档称「YouTube 1781/1781」，去重报告为 1782 条 —— 差 1 条，口径未对齐",
+    "101 个直播转写是否全部完整、6 场补转是否完成 —— 无完成记录，需回听/时长校验",
+    "本名、出生年、籍贯、实业背景均为第三方网友帖转述，标 unverified，不得写死",
+    "知识星球（付费）、公众号、X 账号是否纳入 —— 待拍板"
+  ]
+}

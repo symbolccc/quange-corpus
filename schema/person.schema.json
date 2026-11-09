@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "person corpus master profile",
+  "type": "object",
+  "required": ["person", "sources"],
+  "properties": {
+    "person": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "fields": { "type": "array", "items": { "type": "string" } },
+        "status": { "enum": ["living", "deceased", "unknown"] },
+        "negative_constraints": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "TA 绝不会做/绝不会说的话（borrowed: yorishiro SOUL.md Negative Constraints）"
+        },
+        "knowledge_boundaries": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "TA 知道/不知道的信息边界（borrowed: yorishiro World Knowledge）"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "tier", "url"],
+        "properties": {
+          "id": { "type": "string" },
+          "tier": { "enum": ["green_official_full", "yellow_link_plus_short_quote", "red_third_party_local_only"] },
+          "type": { "enum": ["letter", "meeting", "speech", "interview", "book", "article", "video", "filing", "other"] },
+          "url": { "type": "string" },
+          "verified_at": { "type": "string" },
+          "coverage": { "type": "string" }
+        }
+      }
+    },
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "statement", "provenance"],
+        "properties": {
+          "id": { "type": "string" },
+          "statement": { "type": "string" },
+          "provenance": { "enum": ["person_verbatim", "person_implied", "editor_analyst", "practice_derived"] },
+          "source_ids": { "type": "array", "items": { "type": "string" } },
+          "first_appearance": { "type": "string" },
+          "maturity": {
+            "enum": ["seed", "corroborated", "validated"],
+            "description": "按独立来源家族计数升级，不按重复次数投票（borrowed: Personal-Ontology）"
+          },
+          "counter_examples": { "type": "array", "items": { "type": "string" } },
+          "known_conflict": { "type": "string" },
+          "stage_note": { "type": "string", "description": "该原则适用于 TA 的哪个阶段、后来是否改变及原因（borrowed: personal-distillation 时间线）" }
+        }
+      }
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "statement", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "statement": { "type": "string" },
+          "status": { "enum": ["proposed", "supported", "refuted"] },
+          "evidence_source_ids": { "type": "array", "items": { "type": "string" } },
+          "created": { "type": "string" },
+          "last_reviewed": { "type": "string" }
+        }
+      },
+      "description": "可检验的猜想：先挂起，找到证据再升级或证伪（borrowed: personal-distillation testable hypotheses）"
+    },
+    "quotes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text", "source_id", "verified"],
+        "properties": {
+          "text": { "type": "string" },
+          "source_id": { "type": "string" },
+          "date": { "type": "string" },
+          "verified": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "speech_fingerprint": {
+      "type": "object",
+      "properties": {
+        "top_phrases": { "type": "array", "items": { "type": "string" } },
+        "syntax_notes": { "type": "array", "items": { "type": "string" } },
+        "taboos": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "decision_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "pattern": { "type": "string" },
+          "trigger": { "type": "string" },
+          "typical_response": { "type": "string" },
+          "evidence_source_ids": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "topic": { "type": "string" },
+          "side_a": { "type": "string" },
+          "side_b": { "type": "string" },
+          "status": { "type": "string" }
+        }
+      }
+    },
+    "open_questions": { "type": "array", "items": { "type": "string" } },
+    "revision_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": { "type": "string" },
+          "change": { "type": "string" },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全哥判据体系 · quange-corpus</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--ink:#1c2430;--sub:#5c6773;--line:#e3e7ec;--accent:#1f6feb;--warn:#b26a00;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:40px 22px 80px}
+header{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:34px}
+h1{font-size:30px;margin:0 0 8px;letter-spacing:-.5px}
+.lead{color:var(--sub);margin:0 0 14px;font-size:16px}
+.badges span{display:inline-block;background:#e8f0fe;color:#174ea6;border-radius:20px;padding:3px 12px;font-size:12px;margin-right:8px}
+h2{font-size:20px;margin:38px 0 14px;padding-left:11px;border-left:4px solid var(--accent)}
+.hint{color:var(--sub);font-size:13px;margin:0 0 12px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+th,td{padding:9px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:#f0f3f7;font-weight:600}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+td.src{color:var(--sub);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:0 1px 3px rgba(20,30,50,.04)}
+.card-h{display:flex;gap:11px;align-items:baseline}
+.card h3{font-size:16px;margin:0}
+.idx{color:var(--accent);font-weight:700;font-size:13px}
+.tags{margin:10px 0 12px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tag{background:#e8f0fe;color:#174ea6;border-radius:5px;padding:1px 8px;font-size:11px}
+.tag.soft{background:#eef1f4;color:#4a5561}
+.cid{color:var(--sub);font-size:11px}
+blockquote{margin:8px 0;padding:9px 13px;background:#f6f8fb;border-left:3px solid #9db9e8;color:#2c3846;font-size:14px}
+.refs,.measure{font-size:12.5px;color:var(--sub);margin:10px 0 0;word-break:break-all}
+.refs code{display:inline-block;background:#f1f4f8;border-radius:4px;padding:1px 6px;margin:2px 5px 2px 0;color:#33415c}
+.lbl{display:inline-block;min-width:62px;color:#8a95a2;font-weight:600}
+.measure{color:#3d4753}
+.pending{background:#fff8ec;border:1px solid #f0d9ad;border-radius:10px;padding:14px 20px}
+.pending li{margin:5px 0;font-size:14px}
+.note{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;font-size:14px;color:#3d4753}
+.note li{margin:6px 0}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--sub);font-size:12px}
+</style>
+</head>
+<body><div class="wrap">
+<header>
+  <h1>全哥判据体系 <span style="font-weight:400;color:#8a95a2;font-size:18px">quange-corpus</span></h1>
+  <p class="lead">把「北方的wolf1985」全网公开内容，炼成逐条带出处、可复核的人物判据。不是投资建议，也不代表本人。</p>
+  <div class="badges"><span>判据 v1 · 10 条</span><span>10/10 带出处</span><span>状态：采集层完成 · 回测未开始</span><span>更新 2026-11-09</span></div>
+</header>
+
+<h2>一、数据概览 · 按信源分组</h2>
+<p class="hint">口径遵循「每条数字带来源标签、按信源分组、未标源单独归入待核实」。A 组为本次逐项读回本机文件所得，B 组为项目历史文档自述。</p>
+<h3 style="font-size:15px;margin:18px 0 8px">A. 本机实测</h3>
+<table><thead><tr><th>项</th><th>数值</th><th>来源</th></tr></thead><tbody><tr><td>雪球原创正文</td><td class='num'>1,228</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>雪球纯文本</td><td class='num'>1,228</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>其中 &lt;200 字节</td><td class='num'>40</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>其中 ≥200 字节</td><td class='num'>1,188</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>雪球 timeline 列表页</td><td class='num'>110</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>直播转写文件</td><td class='num'>101</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>直播转写字节</td><td class='num'>11,287,582</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>指纹总行数</td><td class='num'>8,176</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>唯一内容簇</td><td class='num'>7,659</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>同平台重复簇</td><td class='num'>507</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>跨平台重复簇</td><td class='num'>10</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>判据条数</td><td class='num'>10</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>带 source_refs</td><td class='num'>10</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>person_verbatim</td><td class='num'>9</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>person_implied</td><td class='num'>1</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr><tr><td>期数总表行数</td><td class='num'>6,811</td><td class='src'>本机实测 2026-11-09（逐项读回文件）</td></tr></tbody></table>
+<h3 style="font-size:15px;margin:24px 0 8px">B. 项目文档自述（未逐条复核）</h3>
+<table><thead><tr><th>项</th><th>数值</th><th>来源</th></tr></thead><tbody><tr><td>平台条目总数</td><td class='num'>8872 条</td><td class='src'>项目文档自述：corpus-index/dedup-report.md，未逐条复核</td></tr><tr><td>抖音主号 / 小号</td><td class='num'>2630 / 1021 条</td><td class='src'>项目文档自述：corpus-index/dedup-report.md，未逐条复核</td></tr><tr><td>快手自营号独有</td><td class='num'>3338 条</td><td class='src'>项目文档自述：corpus-index/dedup-report.md，未逐条复核</td></tr><tr><td>YouTube 视频 / 直播</td><td class='num'>1782 / 101 条</td><td class='src'>项目文档自述：corpus-index/dedup-report.md，未逐条复核</td></tr><tr><td>判断句候选池</td><td class='num'>552 条（雪球 254 + 抖音 298）</td><td class='src'>项目文档自述：PROGRESS.md，未逐条复核</td></tr><tr><td>账号矩阵</td><td class='num'>19 个账号</td><td class='src'>项目文档自述：PROGRESS.md / person-forge preset，未逐条复核</td></tr></tbody></table>
+<h3 style="font-size:15px;margin:24px 0 8px;color:var(--warn)">C. 待核实 ⛔（不与已归因数据并列）</h3>
+<div class="pending"><ul><li>旧文档称雪球「1114 篇实质内容」，磁盘 ≥200 字节为 1188 篇，差 74 篇 —— 清洗口径需补充</li><li>旧文档称「YouTube 1781/1781」，去重报告为 1782 条 —— 差 1 条，口径未对齐</li><li>101 个直播转写是否全部完整、6 场补转是否完成 —— 无完成记录，需回听/时长校验</li><li>本名、出生年、籍贯、实业背景均为第三方网友帖转述，标 unverified，不得写死</li><li>知识星球（付费）、公众号、X 账号是否纳入 —— 待拍板</li></ul></div>
+
+<h2>二、10 条判据（v1）</h2>
+<p class="hint">每条均含原话、出处与证据等级。<code>person_implied</code> 为推断，不得当作本人原话；ASR 转写未经人工回听一律不得标 <code>person_verbatim</code>。</p>
+<div class="grid">
+        <article class="card">
+          <div class="card-h"><span class="idx">01</span><h3>这家公司现金流好不好？</h3></div>
+          <div class="tags"><span class="tag">person_verbatim</span><span class="tag soft">权重 core</span><code class="cid">Q-cashflow-filter</code></div>
+          <blockquote>现金流不好的公司看都不要看了，品牌弱没有核心技术的企业，基本不可能赚到钱了</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>xueqiu:7153156603/4684370358 《价值观的价值》2021-11-20</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>经营现金流连续为负或远低于净利润 =&gt; 直接出局，不做进一步分析</p>
+        </article>
+        <article class="card">
+          <div class="card-h"><span class="idx">02</span><h3>这在不在我的认知范围内？</h3></div>
+          <div class="tags"><span class="tag">person_verbatim</span><span class="tag soft">权重 gate</span><code class="cid">Q-cognition-circle</code></div>
+          <blockquote>我们永远赚不到认知之外的钱</blockquote><blockquote>一定用闲钱炒股，做好仓位管理是心平气和的关键，买入躺着赚钱的公司，我们能睡得着觉</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>douyin:aweme 7129033944027951909 2022-08-08（赞1760）</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>无法用一段话讲清生意如何赚钱 =&gt; 不投；本判据为门槛，不通过即停</p>
+        </article>
+        <article class="card">
+          <div class="card-h"><span class="idx">03</span><h3>账面利润是否变成了真金白银？</h3></div>
+          <div class="tags"><span class="tag">person_verbatim</span><span class="tag soft">权重 core</span><code class="cid">Q-cash-over-profit</code></div>
+          <blockquote>2015年前做代理品牌，每年轻松做大几亿的规模，看起来很赚钱但是总见不到钱，资金都压库存和在途了，一个双十一就要压5000万库存</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>xueqiu:7153156603/408257660 《努力不重要》2026-09-07</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>利润高但应收/库存增速远超收入增速 =&gt; 视为劣质增长</p>
+        </article>
+        <article class="card">
+          <div class="card-h"><span class="idx">04</span><h3>未来现金流折现怎么算？</h3></div>
+          <div class="tags"><span class="tag">person_verbatim</span><span class="tag soft">权重 signal_only</span><code class="cid">Q-dcf-mindset</code></div>
+          <blockquote>未来现金流的折现不是算法，是思维方式，不要企图拿计算器去算出来</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>xueqiu:7153156603/258503837 拼多多大涨后 2019-10-25</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>⛔ 需补充</p>
+        </article>
+        <article class="card">
+          <div class="card-h"><span class="idx">05</span><h3>行业红利是否已经消失？</h3></div>
+          <div class="tags"><span class="tag">person_verbatim</span><span class="tag soft">权重 core</span><code class="cid">Q-trend-shift</code></div>
+          <blockquote>2018年5月开始，我们就感觉到流量突破消失了，就开始谨慎保守</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>xueqiu:7153156603/281648086 《最难的一年》2024-03-12</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>获客成本拐点/流量增速失速 =&gt; 提前收缩，不等下滑确认（其 2018 实战案例）</p>
+        </article>
+        <article class="card">
+          <div class="card-h"><span class="idx">06</span><h3>消费者心智是否正在被改写？</h3></div>
+          <div class="tags"><span class="tag">person_verbatim</span><span class="tag soft">权重 core</span><code class="cid">Q-consumer-mind</code></div>
+          <blockquote>消费者观点的改变大都因为短视频的宣传</blockquote><blockquote>营销就是把产品卖给想用的人…最重要的事情有三件：发现想用你产品的人在哪里，让想用的人知道你的产品</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>xueqiu:7153156603/343025625 《昨日的世界》2025-07-18（赞969）</code><code>douyin:aweme 7126844486977462555 2022-10-06</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>渠道/内容形态迁移（货架→内容→AI）=&gt; 重估品牌与渠道护城河</p>
+        </article>
+        <article class="card">
+          <div class="card-h"><span class="idx">07</span><h3>这是&#x27;对的事&#x27;还是只是&#x27;把事做对&#x27;？</h3></div>
+          <div class="tags"><span class="tag">person_implied</span><span class="tag soft">权重 core</span><code class="cid">Q-do-right-things</code></div>
+          <blockquote>建立对事物本质和行为原则的底层认知框架，并用原则指导行为就是做对的事</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>douyin:aweme 7127967134949935900 2022-09-23（赞985）</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>⛔ 需补充</p>
+        </article>
+        <article class="card">
+          <div class="card-h"><span class="idx">08</span><h3>在对的人身上花时间了吗？</h3></div>
+          <div class="tags"><span class="tag">person_verbatim</span><span class="tag soft">权重 signal_only</span><code class="cid">Q-right-people</code></div>
+          <blockquote>我们千万不要在不合适的人身上浪费时间精力，而应该去到茫茫人海中，找到那些本来就志同道合的朋友</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>douyin:aweme 2022-08-14（赞6911，全网最高赞之一）</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>⛔ 需补充</p>
+        </article>
+        <article class="card">
+          <div class="card-h"><span class="idx">09</span><h3>这是能力问题还是思维方式问题？</h3></div>
+          <div class="tags"><span class="tag">person_verbatim</span><span class="tag soft">权重 context</span><code class="cid">Q-mindset-poverty</code></div>
+          <blockquote>贫穷是可以传承的，贫穷和能力无关和思维方式关系巨大</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>xueqiu:7153156603/262390409 《贫穷的本质》2023-10-02（赞717）</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>⛔ 需补充</p>
+        </article>
+        <article class="card">
+          <div class="card-h"><span class="idx">10</span><h3>这笔折腾的收益能否超过躺平投资？</h3></div>
+          <div class="tags"><span class="tag">person_verbatim</span><span class="tag soft">权重 core</span><code class="cid">Q-lying-flat-invest</code></div>
+          <blockquote>我之前建议他拿出一部分资金躺平做投资，比折腾不赚钱的生意强多了</blockquote><blockquote>我从22年躺平以后，现金流变得越来越好了</blockquote>
+          <div class="refs"><span class="lbl">出处</span><code>xueqiu:7153156603/408257660 《努力不重要》2026-09-07</code></div>
+          <p class="measure"><span class="lbl">如何衡量</span>实业主业 ROI 若低于其美股组合预期回报+创业风险溢价 =&gt; 收缩业务做投资</p>
+        </article></div>
+
+<h2>三、方法与边界</h2>
+<div class="note"><ul>
+<li><b>信源分级</b>：官方/一手原文 &gt; 平台索引 &gt; 第三方转述；未标源数字一律进「待核实」。</li>
+<li><b>去重</b>：规范化标题 + 时长 ±3s + 发布时间三重指纹，命中即视为同一内容；结果可与 <code>dedup-report.md</code> 逐项复算。</li>
+<li><b>账号隔离</b>：家属号、助理号、第三方切片号独立成库，绝不混入本人观点；转述巴菲特/段永平标「师承转述」。</li>
+<li><b>版权</b>：雪球全文、短视频标题与转写、音视频均属第三方内容，<b>仅本地保存、不公开</b>；本页只展示判据、索引与统计（沿用 buffett-corpus 的 “Index public, full texts local only”）。</li>
+<li><b>未完成</b>：判据候选池约 500 条待 v2；<code>track-record/</code> 言行回测尚未开展，不可解读为「已验证无偏差」。</li>
+<li><b>免责</b>：本项目是对公开表述的结构化重建，不构成任何投资建议。</li>
+</ul></div>
+
+<footer>生成于 2026-11-09 · 由 <code>scripts/build_public.py</code> 从本机文件现场统计生成 · 原始语料不随本页发布</footer>
+</div></body></html>
